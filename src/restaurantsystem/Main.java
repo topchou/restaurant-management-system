@@ -23,17 +23,16 @@ public class Main extends JFrame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // At first, show the login page and show menu after - 
-        // the authentication process completed
-        
-        createRequiredFileIfDoesNotExist();
+        //ListFile for Ordering data
+    	createOrderListIfDoesNotExist();
         
         Login im = new Login();
+        // Show Menu after Login
         im.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         im.setVisible(true);
     }
     
-    private static void createRequiredFileIfDoesNotExist() {
+    private static void createOrderListIfDoesNotExist() {
         String fileNames [];
         
         File rootDir = new File("storage");
