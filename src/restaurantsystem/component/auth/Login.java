@@ -19,10 +19,8 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-
-        // Since we are not maintaining any user profile so - 
-        // let's set the default user and password
         setDefaultUserName();
+        //no other user only Default
     }
 
     /**
